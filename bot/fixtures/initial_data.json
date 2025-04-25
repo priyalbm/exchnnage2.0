@@ -1,0 +1,82 @@
+[
+  {
+    "model": "bot.exchangeconfig",
+    "pk": 1,
+    "fields": {
+      "name": "binance",
+      "api_endpoint": "https://api.binance.com",
+      "description": "Binance cryptocurrency exchange",
+      "is_active": true
+    }
+  },
+  {
+    "model": "bot.exchangeconfig",
+    "pk": 2,
+    "fields": {
+      "name": "pionex",
+      "api_endpoint": "https://api.pionex.com",
+      "description": "Pionex cryptocurrency exchange with built-in trading bots",
+      "is_active": true
+    }
+  },
+  {
+    "model": "bot.tradingpair",
+    "pk": 1,
+    "fields": {
+      "exchange": 1,
+      "symbol": "BTCUSDT",
+      "base_asset": "BTC",
+      "quote_asset": "USDT",
+      "min_quantity": "0.00001000",
+      "max_quantity": "1000.00000000",
+      "price_precision": 2,
+      "quantity_precision": 6,
+      "last_updated": "2025-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "bot.tradingpair",
+    "pk": 2,
+    "fields": {
+      "exchange": 1,
+      "symbol": "ETHUSDT",
+      "base_asset": "ETH",
+      "quote_asset": "USDT",
+      "min_quantity": "0.00010000",
+      "max_quantity": "5000.00000000",
+      "price_precision": 2,
+      "quantity_precision": 5,
+      "last_updated": "2025-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "bot.tradingpair",
+    "pk": 3,
+    "fields": {
+      "exchange": 2,
+      "symbol": "BTC_USDT",
+      "base_asset": "BTC",
+      "quote_asset": "USDT",
+      "min_quantity": "0.00001000",
+      "max_quantity": "1000.00000000",
+      "price_precision": 2,
+      "quantity_precision": 6,
+      "last_updated": "2025-04-23T00:00:00Z"
+    }
+  },
+  {
+    "model": "bot.tradingpair",
+    "pk": 4,
+    "fields": {
+      "exchange": 2,
+      "symbol": "ETH_USDT",
+      "base_asset": "ETH",
+      "quote_asset": "USDT",
+      "min_quantity": "0.00010000",
+      "max_quantity": "5000.00000000",
+      "price_precision": 2,
+      "quantity_precision": 5,
+      "last_updated": "2025-04-23T00:00:00Z"
+    }
+  }
+]
